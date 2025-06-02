@@ -57,6 +57,11 @@
       padding: 1rem;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
     .product form {
       margin-top: 10px;
     }
@@ -69,8 +74,11 @@
     }
     iframe {
       width: 100%;
-      height: 400px;
+      max-width: 765px;
+      height: 510px;
       border: none;
+      display: block;
+      margin: 0 auto;
     }
   </style>
 </head>
@@ -95,12 +103,12 @@
 
   <div class="products" id="shop">
     <div class="product">
+      <img src="https://images.unsplash.com/photo-1600185365291-61182c4e7f1a?auto=format&fit=crop&w=800&q=80" alt="Turmeric Soap">
       <h3>Turmeric Soap</h3>
       <p>Brightens and tones skin naturally.</p>
       <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
         <input type="hidden" name="cmd" value="_xclick">
         <input type="hidden" name="business" value="marie@naturganicsbiz.com">
-
         <input type="hidden" name="item_name" value="Turmeric Soap">
         <input type="hidden" name="amount" value="7.99">
         <input type="hidden" name="currency_code" value="USD">
@@ -108,6 +116,7 @@
       </form>
     </div>
     <div class="product">
+      <img src="https://images.unsplash.com/photo-1582719478182-d1a2f23a6ca3?auto=format&fit=crop&w=800&q=80" alt="Lavender Soy Candle">
       <h3>Lavender Soy Candle</h3>
       <p>Soothing, clean-burning aromatherapy.</p>
       <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
@@ -120,6 +129,7 @@
       </form>
     </div>
     <div class="product">
+      <img src="https://images.unsplash.com/photo-1585386959984-a415522c5c8b?auto=format&fit=crop&w=800&q=80" alt="Shea Body Butter">
       <h3>Shea Body Butter</h3>
       <p>Ultra-hydrating and whipped to perfection.</p>
       <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
@@ -132,6 +142,7 @@
       </form>
     </div>
     <div class="product">
+      <img src="https://images.unsplash.com/photo-1611404129969-fd4f2be26ec3?auto=format&fit=crop&w=800&q=80" alt="Hair and Body Oil">
       <h3>Hair & Body Oil</h3>
       <p>Lightweight, nourishing blend for all types.</p>
       <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
@@ -150,28 +161,24 @@
     <p>Email us at <strong>marie@naturganicsbiz.com</strong><br>
        Follow us on Instagram & Facebook: <strong>@naturganicsbiz</strong></p>
     <p>Scan below to pay securely via PayPal:</p>
-   <img src="paypal-qr-code.png" alt="PayPal QR Code" width="200">
-
+    <img src="paypal-qr-code.png" alt="PayPal QR Code" width="200">
   </div>
 
- <div class="content">
-  <h2>Instagram Feed</h2>
-  <!-- SnapWidget -->
-  <iframe 
-    src="https://snapwidget.com/embed/1098159" 
-    class="snapwidget-widget" 
-    allowtransparency="true" 
-    frameborder="0" 
-    scrolling="no" 
-    style="border:none; overflow:hidden; width:100%; max-width:765px; height:510px; display:block; margin:0 auto;" 
-    title="Posts from Instagram">
-  </iframe>
-</div>
-
-
+  <div class="content">
+    <h2>Instagram Feed</h2>
+    <!-- SnapWidget -->
+    <iframe 
+      src="https://snapwidget.com/embed/1098159" 
+      class="snapwidget-widget" 
+      allowtransparency="true" 
+      frameborder="0" 
+      scrolling="no" 
+      title="Posts from Instagram">
+    </iframe>
+  </div>
 
   <footer>
     &copy; 2025 Naturganics. All rights reserved.
   </footer>
 </body>
-</html>
+</
